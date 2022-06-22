@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consumo de API y uso de localStorage, para almacenar data de la API de manera local.">
+    <title>Web Component</title>
+
+    <link rel="stylesheet" href="./assets/styles/css/styles.css">
+
+    <!-- font awesome  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+                <h1>API</h1>
+                <p> <span>|</span> Usuarios</p>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <section>
+            <div class="cards" id="users">
+                <div class="card">
+                    <figure><img src="./assets/img/profile.png" alt="profile"></figure>
+                    <div class="content">
+                        <p>Nombre</p>
+                        <p>Apellido</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure><img src="./assets/img/profile.png" alt="profile"></figure>
+                    <div class="content">
+                        <p>Nombre</p>
+                        <p>Apellido</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <input id="button" type="button" value="Siguiente">
+
+            <div id="c_modal" class="container_modal">
+                <div id="modal" class="modal">
+                <button id="close"> <i class="fa-solid fa-xmark"></i> </button>
+                <figure><img src="https://reqres.in/img/faces/2-image.jpg" alt="profile"></figure>
+                <div class="description">
+                    <p><span>Nombre : </span>Jannet</p>
+                    <p><span>Apellido : </span>Weaver</p>
+                    <p><span>Correo : </span>janet.weaver@reqres.in</p>
+                </div>
+                <button class="options">Options</button>
+            </div>
+            </div>
+            
+        </section>
+    </main>
+    
+</body>
+
+<script src="./assets/js/servicios.js"></script>
+</html>

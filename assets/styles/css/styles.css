@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #ffff; }
+
+li {
+  list-style: none; }
+
+header {
+  background: linear-gradient(151.8deg, #0e1a2f 25.79%, #f50f57 102.69%);
+  border-radius: 0px 0px 40px 40px;
+  position: fixed;
+  width: 100%;
+  z-index: 1; }
+  header nav {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 15%);
+    height: 60px;
+    margin: auto;
+    padding: 10px 0;
+    gap: 10px; }
+    header nav h1 {
+      color: #ffff; }
+    header nav p {
+      color: #ffff;
+      display: flex;
+      gap: 10px;
+      text-decoration: underline #F50F57; }
+
+main {
+  position: relative;
+  top: 70px;
+  width: calc(100% - 15%);
+  margin: auto; }
+  main section .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; }
+    main section .cards .card {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background: #1A2D4D;
+      border-radius: 15px;
+      height: 140px; }
+      main section .cards .card figure img {
+        border-radius: 50%;
+        width: 100px;
+        display: flex;
+        margin: 0 10px; }
+      main section .cards .card .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #ffff;
+        margin: 1rem 2rem;
+        gap: 10px;
+        line-height: 40px; }
+        main section .cards .card .content button {
+          background: #F50F57;
+          color: #ffff;
+          border: none;
+          border-radius: 3px;
+          padding: 3px;
+          cursor: pointer; }
+  main section .container_modal {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center; }
+    main section .container_modal .modal {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      margin: auto;
+      width: 350px;
+      background: #1A2D4D;
+      border-radius: 5px;
+      top: 20px;
+      transition: transform 1s;
+      transform: scale(0); }
+      main section .container_modal .modal button {
+        background: none;
+        border: none;
+        color: #F50F57;
+        font-size: 20px;
+        position: absolute;
+        right: 5px;
+        top: 0;
+        cursor: pointer; }
+      main section .container_modal .modal figure img {
+        width: 100%;
+        height: 200px; }
+      main section .container_modal .modal .description {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+        color: #ffff; }
+        main section .container_modal .modal .description p span {
+          margin-left: 5px; }
+      main section .container_modal .modal .options {
+        top: 83%;
+        right: 2rem;
+        padding: 5px;
+        background: #F50F57;
+        color: #ffff;
+        border-radius: 10px;
+        cursor: no-drop; }
+    main section .container_modal .modal_close {
+      transform: scale(1.5); }
+  main section input {
+    background: #1A2D4D;
+    color: #ffff;
+    background: #1a2d4d;
+    padding: 5px;
+    border: none;
+    margin-top: 27px;
+    float: right;
+    right: 0;
+    cursor: pointer; }
+
+/*# sourceMappingURL=styles.css.map */
